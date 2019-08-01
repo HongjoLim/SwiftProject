@@ -10,6 +10,6 @@ import Foundation
 
 class Travel_Guide_Class {
     
-    var category: Category!
+    var category: Category_Model!
     
 }
