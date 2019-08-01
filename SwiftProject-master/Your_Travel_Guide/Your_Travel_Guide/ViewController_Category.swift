@@ -10,10 +10,36 @@ import UIKit
 
 class ViewController_Category: UIViewController {
 
+    var app = Travel_Guide_Class()
+    
+    @IBOutlet weak var introBtn: UIButton!
+    @IBOutlet weak var foodBtn: UIButton!
+    @IBOutlet weak var shoppingBtn: UIButton!
+    @IBOutlet weak var numBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func categorySelected(_ sender: UIButton) {
+        
+        switch(sender.currentTitle){
+        case (categories.INTRODUCTION as? String):
+            app.category.name = "INTRODUCTION"
+        case (categories.FOOD as? String):
+            app.category.name = "FOOD"
+        case (categories.SHOPPING as? String):
+            app.category.name = "SHOPPING"
+        case (categories.NUMBERS as? String):
+            app.category.name = "NUMBERS"
+        default:
+            break;
+        }
+        
+        //print(app.category.name ?? "none")
     }
     
 
@@ -27,4 +53,12 @@ class ViewController_Category: UIViewController {
     }
     */
 
+}
+
+enum categories {
+    
+    case INTRODUCTION
+    case FOOD
+    case SHOPPING
+    case NUMBERS
 }

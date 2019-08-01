@@ -162,10 +162,10 @@
             </objects>
             <point key="canvasLocation" x="963.76811594202911" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Category-->
         <scene sceneID="b4T-dN-1zW">
             <objects>
-                <viewController id="DkW-K0-xML" sceneMemberID="viewController">
+                <viewController id="DkW-K0-xML" customClass="ViewController_Category" customModule="Your_Travel_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Y1-Uh-7MI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,6 +179,7 @@
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="categorySelected:" destination="DkW-K0-xML" eventType="touchUpInside" id="hGJ-kB-qIM"/>
                                     <segue destination="qt4-95-49Q" kind="show" id="943-Oo-cX1"/>
                                 </connections>
                             </button>
@@ -191,6 +192,7 @@
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="categorySelected:" destination="DkW-K0-xML" eventType="touchUpInside" id="vgP-zb-s6S"/>
                                     <segue destination="YvX-k1-6rb" kind="show" id="QsE-oQ-13m"/>
                                 </connections>
                             </button>
@@ -203,6 +205,7 @@
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="categorySelected:" destination="DkW-K0-xML" eventType="touchUpInside" id="FPH-p7-Bri"/>
                                     <segue destination="qt4-95-49Q" kind="show" id="X21-9a-fZ2"/>
                                 </connections>
                             </button>
@@ -222,6 +225,7 @@
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="categorySelected:" destination="DkW-K0-xML" eventType="touchUpInside" id="KyO-ly-OHw"/>
                                     <segue destination="qt4-95-49Q" kind="show" id="A1p-hi-4e3"/>
                                 </connections>
                             </button>
@@ -229,15 +233,21 @@
                         <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="5b2-xZ-c79"/>
                     </view>
+                    <connections>
+                        <outlet property="foodBtn" destination="532-rh-cZm" id="Q2Q-Mz-96o"/>
+                        <outlet property="introBtn" destination="75Y-So-JV7" id="PuJ-m8-u2r"/>
+                        <outlet property="numBtn" destination="3rJ-Im-LjB" id="MRp-YR-egK"/>
+                        <outlet property="shoppingBtn" destination="TsV-Xq-rUB" id="8ZA-xx-UoZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fu-Hi-Bkw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1734.7826086956522" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Content-->
         <scene sceneID="cmA-AQ-elF">
             <objects>
-                <viewController id="qt4-95-49Q" sceneMemberID="viewController">
+                <viewController id="qt4-95-49Q" customClass="ViewController_Content" customModule="Your_Travel_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G1q-pA-USU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -462,7 +472,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="943-Oo-cX1"/>
+        <segue reference="A1p-hi-4e3"/>
         <segue reference="WTP-pw-B9T"/>
     </inferredMetricsTieBreakers>
 </document>
