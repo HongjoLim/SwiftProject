@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController_Category: UIViewController {
 
-    var app: Travel_Guide_Class!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

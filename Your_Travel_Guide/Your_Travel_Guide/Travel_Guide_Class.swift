@@ -7,9 +7,3 @@
 //
 
 import Foundation
-
-class Travel_Guide_Class {
-    
-    var category: Category_Model!
-    
-}

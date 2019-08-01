@@ -7,22 +7,3 @@
 //
 
 import Foundation
-
-class Category_Model {
-    
-    var name: String!
-    var topic: String!
-    
-}
-
-enum IntroductionTopic{
-    
-}
-
-enum FoodTopic{
-    
-}
-
-enum ShoppingTopic{
-    
-}
