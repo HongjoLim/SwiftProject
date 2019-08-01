@@ -28,15 +28,23 @@ class ViewController_Category: UIViewController {
         
     }
     
+    // Whatever category button is clicked, set the current category and its topic
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let categoryBtn = sender as? UIButton
         
         let category = categoryBtn?.currentTitle ?? "none"
         
-        app.category.setTopic(category)
+        app.category.setName(category)
         
-        print(app.category.getTopic())
+        // Declare a variable to store the next controller (ViewContoller_Content)
+        let nextController = segue.destination as? ViewController_Content
+        
+        // This is to pass the app model to the next view contoller
+        nextController?.category = app.category.getName()
+        
+        // To test
+        //print(app.category.getName())
     }
     
     /*

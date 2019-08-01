@@ -13,11 +13,11 @@ class Category_Model {
     var name: String = ""
     var topic: String = ""
     
-    func setCategoryName (_ name: String){
+    func setName (_ name: String){
         self.name = name;
     }
     
-    func getCategoryName () -> String {
+    func getName () -> String {
         return self.name;
     }
     
@@ -28,17 +28,5 @@ class Category_Model {
     func getTopic () -> String {
         return self.topic;
     }
-    
-}
-
-enum IntroductionTopic{
-    
-}
-
-enum FoodTopic{
-    
-}
-
-enum ShoppingTopic{
     
 }

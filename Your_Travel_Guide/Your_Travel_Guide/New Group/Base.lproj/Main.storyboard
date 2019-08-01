@@ -193,6 +193,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btn1Clicked:" destination="qt4-95-49Q" eventType="touchUpInside" id="GIZ-q3-y5O"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dag-1c-wHk">
                                 <rect key="frame" x="0.0" y="523" width="414" height="111"/>
@@ -202,14 +205,10 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btn3Clicked:" destination="qt4-95-49Q" eventType="touchUpInside" id="IBw-ry-Mle"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oe-SQ-HWA">
-                                <rect key="frame" x="186" y="174" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3w-eT-ACL">
                                 <rect key="frame" x="0.0" y="393" width="414" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -218,6 +217,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btn2Clicked:" destination="qt4-95-49Q" eventType="touchUpInside" id="6fF-KW-r7U"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w28-mr-Hxb">
                                 <rect key="frame" x="0.0" y="658" width="414" height="111"/>
@@ -227,11 +229,28 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btn4Clicked:" destination="qt4-95-49Q" eventType="touchUpInside" id="dFo-cr-7kU"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oe-SQ-HWA">
+                                <rect key="frame" x="48" y="139" width="318" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="3eP-8t-dKb"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="7oe-SQ-HWA" id="Scy-J4-rDo"/>
+                        <outlet property="topicBtn1" destination="Kpv-fh-33J" id="2eZ-7o-7k5"/>
+                        <outlet property="topicBtn2" destination="u3w-eT-ACL" id="bCg-Hj-xgD"/>
+                        <outlet property="topicBtn3" destination="dag-1c-wHk" id="hbE-3m-h8L"/>
+                        <outlet property="topicBtn4" destination="w28-mr-Hxb" id="uXa-w2-Vp9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ruv-sm-fa0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
