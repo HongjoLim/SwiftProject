@@ -9,22 +9,99 @@
 import UIKit
 
 class ViewController_Content: UIViewController {
-
+    
+    @IBOutlet weak var label: UILabel!
+    
+    @IBOutlet weak var topicBtn1: UIButton!
+    @IBOutlet weak var topicBtn2: UIButton!
+    @IBOutlet weak var topicBtn4: UIButton!
+    @IBOutlet weak var topicBtn3: UIButton!
+    
+    // A variable to store current category
+    var category = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        switch(self.category){
+            
+        case "INTRODUCTION":
+            topicBtn1.setTitle("My name is Sam", for: .normal)
+            topicBtn2.setTitle("Hello", for: .normal)
+            topicBtn3.setTitle("Thank you", for: .normal)
+        case "FOOD":
+            topicBtn1.setTitle("Apple", for: .normal)
+            topicBtn2.setTitle("Breakfast", for: .normal)
+            topicBtn3.setTitle("Lunch", for: .normal)
+        case "SHOPPING":
+            topicBtn1.setTitle("Can I try this on?", for: .normal)
+            topicBtn2.setTitle("How much is this?", for: .normal)
+            topicBtn3.setTitle("I will come back later", for: .normal)
+        default:
+            break;
+        }
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // This action gets triggered when the first button is clicked
+    @IBAction func btn1Clicked(_ sender: UIButton) {
+       
+        switch(self.category){
+        case "INTRODUCTION":
+            label.text = "मेरा नाम सैम है"
+        case "FOOD":
+            label.text = ""
+        case "SHOPPING":
+            label.text = ""
+        default:
+            break;
+        }
+        
     }
-    */
+    
+    
+    @IBAction func btn2Clicked(_ sender: UIButton) {
 
+        switch(self.category){
+        case "INTRODUCTION":
+            label.text = "नमस्ते"
+        case "FOOD":
+            label.text = ""
+        case "SHOPPING":
+            label.text = ""
+        default:
+            break;
+        }
+    }
+    
+    @IBAction func btn3Clicked(_ sender: UIButton) {
+
+        switch(self.category){
+        case "INTRODUCTION":
+            label.text = ""
+        case "FOOD":
+            label.text = ""
+        case "SHOPPING":
+            label.text = ""
+        default:
+            break;
+        }
+
+    }
+    
+    @IBAction func btn4Clicked(_ sender: UIButton) {
+        
+        switch(self.category){
+        case "INTRODUCTION":
+            label.text = ""
+        case "FOOD":
+            label.text = ""
+        case "SHOPPING":
+            label.text = ""
+        default:
+            break;
+        }
+
+    }
+    
 }
